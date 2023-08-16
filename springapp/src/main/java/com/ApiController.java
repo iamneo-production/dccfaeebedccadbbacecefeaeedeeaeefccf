@@ -1,9 +1,14 @@
-import javax.annotation.processing.Generated;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Rest
+@RestController
+
 public class ApiController {
-    public String Welcome()
-    {
-        return "Welcome String Boot!.";
-    }
+
+	@GetMapping("")
+	
+	public String Welcome()
+	{
+		return "Welcome String Boot!.";
+	}
 }
